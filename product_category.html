@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product category</title>
+    <link rel="stylesheet" href="asset/css/bootstrap4.6.min.css">
+    <link rel="stylesheet" href="asset/css/stylesheet.css">
+</head>
+<body>
+    <div class="section">
+        <div class="container-fluid navbar1">
+            <div class="row box">
+                <div class="col-lg-2 logo">
+                    <img src="./asset/images/logo.png" alt="logo">
+                </div>
+                <div class="col-lg-10 logo1">
+                    <p class="abc">Inventory Management System.</p>
+                    <button type="button" id="logout-btn" class="profile-btn">Log out</button>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar1">
+            <div class="box1">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" id="product-form">Products</a></li>
+                    <li><a href="product_category.html" id="product-category">Product Category</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <h6>Product categories </h6>
+                    </div>
+                    <div class="col-lg-2 offset-lg-7 mb-2">
+                        <button class="btn btn-primary" id="addNewCategory">Add category</button>
+                    </div>
+                    <div class="col-lg-12">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                    <th>Product</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="data">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="add-category" class="hide">
+            <div class="modal-dialog">
+                <form id="submit-product">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Add product</h5>
+                            <button type="button" id="close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input class="form-control" id="category_name" name="category_name">
+                                <span id="nameError" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label>Description</label>
+                                <input class="form-control" id="category_description" name="category_description">
+                                <span id="desError" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="asset/js/jquery.js"></script>
+    <script src="asset/js/bootstrap.bundle.min.js"></script>
+    <script src="asset/js/common.js"></script>
+    <script src="asset/js/product_category.js"></script>
+</body>
+
+</html>

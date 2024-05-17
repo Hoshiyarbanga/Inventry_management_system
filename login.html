@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="asset/css/bootstrap4.6.min.css">
+    <link rel="stylesheet" href="asset/css/stylesheet.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row main-wrapper">
+            <div class="col-lg-6 offset-lg-3">
+                <h2 class="text-dark text-center">Admin Login Page</h2>
+                <p class="text-dark text-center">Access to dashboard</p>
+                <div class="account-wrapper">
+              <form id="login-form">
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input class="form-control" id="username" name="username">
+                    <span id="usernameError" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                   <label>Password</label>
+                   <input class="form-control" type="password" id="password" name="password">
+                   <span id="passwordError" class="text-danger"></span>
+                </div>
+                <div class="form-group text-center">
+                    <button class="btn btn-primary custom-btn" type="submit">Login</button>
+                </div>
+            </form>
+        </div>
+        </div>
+        </div>
+    </div>
+    <script src="asset/js/jquery.js"></script>
+    <script src="asset/js/bootstrap.bundle.min.js"></script>
+    <script src="asset/js/login.js"></script>
+</body>
+</html>
